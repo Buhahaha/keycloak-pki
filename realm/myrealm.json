@@ -1,0 +1,32 @@
+{
+    "realm": "myrealm",
+    "enabled": true,
+    "clients": [
+      {
+        "clientId": "myclient",
+        "enabled": true,
+        "publicClient": true,
+        "redirectUris": ["*"],
+        "protocol": "openid-connect",
+        "standardFlowEnabled": true,
+        "implicitFlowEnabled": false,
+        "directAccessGrantsEnabled": true,
+        "serviceAccountsEnabled": false
+      }
+    ],
+    "users": [
+      {
+        "username": "testuser",
+        "enabled": true,
+        "emailVerified": true,
+        "credentials": [
+          {
+            "type": "password",
+            "value": "testpass",
+            "temporary": false
+          }
+        ]
+      }
+    ]
+  }
+  
